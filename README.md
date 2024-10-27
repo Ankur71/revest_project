@@ -1,17 +1,12 @@
 markdown
 
-# Sales Management Project
+# Sales Project
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Technologies Used](#technologies-used)
 3. [Backend Setup](#backend-setup)
 4. [Frontend Setup](#frontend-setup)
-5. [API Endpoints](#api-endpoints)
-6. [Third-Party API Integration](#third-party-api-integration)
-7. [Features](#features)
-8. [License](#license)
-9. [Instructions for Use](#instructions-for-use)
 
 ## Project Overview
 This project is a full-stack application that manages sales orders and products using Node.js, Express, PostgreSQL, and Angular. It includes CRUD operations for sales orders and products, search functionality, dynamic filtering, and integration with a third-party API for sales transactions.
