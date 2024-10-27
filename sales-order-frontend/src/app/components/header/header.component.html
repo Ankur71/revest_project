@@ -1,0 +1,73 @@
+<header>
+    <nav class="nav-links">
+      <a routerLink="/">Home</a>
+      <a routerLink="/products">Products</a>
+      <a routerLink="/about">About</a>
+      <a routerLink="/contact">Contact</a>
+    </nav>
+    <div class="search-bar">
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Customer Name"
+    [(ngModel)]="filters.customerName"
+    (ngModelChange)="onSearch()"
+  />
+  <input
+    type="text"
+    placeholder="Email"
+    [(ngModel)]="filters.email"
+    (ngModelChange)="onSearch()"
+  />
+  <input
+    type="text"
+    placeholder="Mobile Number"
+    [(ngModel)]="filters.mobileNumber"
+    (ngModelChange)="onSearch()"
+  />
+  <input
+    type="text"
+    placeholder="Status"
+    [(ngModel)]="filters.status"
+    (ngModelChange)="onSearch()"
+  />
+  <input
+    type="date"
+    placeholder="Order Date"
+    [(ngModel)]="filters.orderDate"
+    (ngModelChange)="onSearch()"
+  />
+  
+</div>
+
+<div class="sales-orders" *ngIf="salesOrders.length > 0">
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Customer Name</th>
+        <th>Status</th>
+        <th>Order Date</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of salesOrders">
+        <td>{{ order.customerName }}</td>
+        <td>{{ order.status }}</td>
+        <td>{{ order.orderDate | date:'shortDate' }}</td>
+        <td>{{ order.email }}</td>
+        <td>{{ order.mobileNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+</div>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-icon">🛒</span>
+    </div>
+  </header>

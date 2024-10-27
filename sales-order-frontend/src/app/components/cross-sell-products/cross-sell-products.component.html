@@ -1,0 +1,8 @@
+<div class="grid-container">
+    <div class="grid-item" *ngFor="let product of products">
+      <img [src]="'/assets/img/' + product.image" alt="{{ product.name }}" width="400"/>
+      <p>{{ product.name }}</p>
+      <p>${{ product.price }}</p>
+    </div>
+  </div>
+  

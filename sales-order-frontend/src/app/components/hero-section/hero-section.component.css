@@ -1,0 +1,16 @@
+.carousel-container {
+    width: 100%; /* Set full width */
+    overflow: hidden; /* Prevent overflow of images */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Set image to fill the carousel */
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  }
+  
+  /* Optional: style for the carousel if needed */
+  ngx-carousel {
+    display: block; /* Ensure it's a block-level element */
+  }
+  
