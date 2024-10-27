@@ -24,11 +24,10 @@ This project is a full-stack application that manages sales orders and products 
 ## Backend Setup
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/sales-management.git
+   git clone https://github.com/Ankur71/revest_project.git
    cd sales-management
+
 Install Required Dependencies
-
-
 npm install express pg sequelize body-parser cors axios
 npm install --save-dev nodemon
 Set Up PostgreSQL Database
@@ -49,10 +48,9 @@ Create the required models and sync them with the database:
 
 Start the Server
 node server.js
-npm start
 The server will run on http://localhost:5000.
 
-Frontend Setup
+## Frontend Setup
 Navigate to the Frontend Directory
 cd sales-frontend
 
@@ -62,13 +60,6 @@ npm install
 Start the Angular Application
 ng serve
 The frontend will run on http://localhost:4200.
-
-Instructions for Use
-Replace https://github.com/yourusername/sales-management.git with the actual URL of your GitHub repository.
-Update any sections to reflect specific details or changes in your project as necessary.
-Ensure the formatting is preserved when you copy this to your README.md file.
-Consider using environment variables for sensitive information (e.g., database credentials, API keys).
-sql
 
 
 
